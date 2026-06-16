@@ -72,7 +72,7 @@ function App() {
     <div className="min-h-screen bg-slate-900">
       <Navbar />
       <Routes>
-        <Route path="/index" element={
+        <Route path="/" element={
           <Index 
             transactions={transactions} 
             budgets={budgets} 
@@ -92,12 +92,6 @@ function App() {
             updateBudget={updateBudget}
             addBudget={addBudget}
             deleteBudget={deleteBudget}
-          />
-        } />
-        <Route path="/" element={
-          <Index 
-            transactions={transactions} 
-            budgets={budgets} 
           />
         } />
       </Routes>
